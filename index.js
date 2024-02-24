@@ -31,12 +31,12 @@ client.on('ready', async () => {
 
     const change = ['https://cdn.discordapp.com/attachments/1175028857464701039/1175594614623846511/ae52d968e7d8117170d2eeff6245ca5c.gif?ex=656bcccd&is=655957cd&hm=7eef6bda3ec17574e66d047f018153cb2284c1ac4519a277ad7ffe8c8d3060e1&'];
     const poop = ['https://cdn.discordapp.com/attachments/1175028857464701039/1175599211346153603/637273165c6b1c33da5f3ec3eb83b9db.gif?ex=656bd115&is=65595c15&hm=2679613a7b319eb412b08cd2b64f6397673d81747a4950079fc08288ed8d5680&'];
-    const change2 = ['มีบอทเจ๋งๆ ', 'มีเม็ดม่วง', 'แอดมินโคตรหล่อ', 'Support เกือบ 25 ชั่วโมง'];
+    const change2 = ['มีบอทเจ๋งๆ ', 'มีเม็ดม่วง', 'AAAA', 'Love na'];
     const change3 = ['⏰', '⏰', '⏰', '⏰'];
-    const iooi = ['୧₊˚🎫・Ticket・꒱', '〝📦〞Stream Twitch 30 B', '〝📦〞Bot Buy Rloe 0 B'];
-    const iiio = ['https://discord.gg/PZmvmA2q6U'];
+    const iooi = ['୧₊˚❤️・Itzlevy ・꒱', '〝📦〞Stream Twitch Free', '〝📦〞Free access 200 room+'];
+    const iiio = ['https://discord.gg/aqt6thEVV7'];
     const yyyt = ['⏰₊꒷ Join discord ˳ʚ', '⏰₊꒷ Join discord ˳ʚ', '⏰₊꒷ Join discord ˳ʚ'];
-    const ddds = ['https://discord.gg/PZmvmA2q6U'];
+    const ddds = ['https://discord.gg/aqt6thEVV7'];
 
     // Randomize data
     const tyyy = yyyt[Math.floor(Math.random() * yyyt.length)];
@@ -50,11 +50,11 @@ client.on('ready', async () => {
 
 
     const r = new Discord.RichPresence()
-      .setApplicationId('1121867777867788309')
-      .setType('STREAMING')
-      .setURL('https://www.twitch.tv/')
+      .setApplicationId('928000104378548224')
+      .setType('LISTENING')
+      .setURL('https://youtu.be/xTZk2G9-6co?si=xpE-kzJivOITFzmQ')
       .setState(`${dwada}`)
-      .setName(`PornHuB`)
+      .setName(`levy`)
       .setDetails(`${ap}${getTime()} ${moment().format('- DD/MM/YYYY')}`)
       .setAssetsSmallImage(`${popp}`)
       .setAssetsLargeImage(`${ssss}`)
