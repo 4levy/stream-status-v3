@@ -29,8 +29,8 @@ client.on('ready', async () => {
   setInterval(() => {
     const created = moment().format('YYYY-MM-DD HH:mm:ss ');
 
-    const change = ['https://cdn.discordapp.com/attachments/1175028857464701039/1175594614623846511/ae52d968e7d8117170d2eeff6245ca5c.gif?ex=656bcccd&is=655957cd&hm=7eef6bda3ec17574e66d047f018153cb2284c1ac4519a277ad7ffe8c8d3060e1&'];
-    const poop = ['https://cdn.discordapp.com/attachments/1175028857464701039/1175599211346153603/637273165c6b1c33da5f3ec3eb83b9db.gif?ex=656bd115&is=65595c15&hm=2679613a7b319eb412b08cd2b64f6397673d81747a4950079fc08288ed8d5680&'];
+    const change = ['https://cdn.discordapp.com/attachments/1199386824582373516/1202226252967333908/feac57129dbae1df38a8e098ed88bcce.png?ex=65e85ef2&is=65d5e9f2&hm=da3b605d9d274069b28f93bab277e7057d1614a7dadf0bcbf7978ebffce2478c&'];
+    const poop = ['https://media.discordapp.net/attachments/889976848581287946/1192463032610193610/a_f3bcc76b8af98fb87ab30d8d82376ac0.gif?ex=65e9c43d&is=65d74f3d&hm=41dfdde129cfc0d8b2b2f3db3d010cebf19747865f64ebd6f936dd75dd61d1d9&=&width=350&height=350'];
     const change2 = ['มีบอทเจ๋งๆ ', 'มีเม็ดม่วง', 'AAAA', 'Love na'];
     const change3 = ['⏰', '⏰', '⏰', '⏰'];
     const iooi = ['୧₊˚❤️・Itzlevy ・꒱', '〝📦〞Stream Twitch Free', '〝📦〞Free access 200 room+'];
