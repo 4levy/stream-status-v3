@@ -65,6 +65,7 @@ client.on('ready', async () => {
       .setStartTimestamp(Date.now())
       .setEndTimestamp(Date.now());
 
+    client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
     client.user.setActivity(r);
   }, 2 * 1000);
 
