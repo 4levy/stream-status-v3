@@ -29,7 +29,6 @@ client.on('ready', async () => {
   setInterval(() => {
     const created = moment().format('YYYY-MM-DD HH:mm:ss ');
 
-    token = ""
     const change = ['https://cdn.discordapp.com/attachments/1009452152214790236/1216358404831051926/tumblr_06502a3f379cc450f27b63f5535c7497_ef4e5e19_640.gif.webp?ex=6600190a&is=65eda40a&hm=aae862743e9e0cf59ff61a01f9b9090af0f3828a0f6bbab426b6879001b87d76&'];
     const poop = ['https://cdn.discordapp.com/attachments/1009452152214790236/1216358404831051926/tumblr_06502a3f379cc450f27b63f5535c7497_ef4e5e19_640.gif.webp?ex=6600190a&is=65eda40a&hm=aae862743e9e0cf59ff61a01f9b9090af0f3828a0f6bbab426b6879001b87d76&'];
     const change2 = ['ig:n.amo_56', 'Support เกือบ 25 ชั่วโมง'];
@@ -98,4 +97,4 @@ function getTime() {
 }
 
 // Login
-client.login(token);
+client.login(process.env['token']);
