@@ -1,17 +1,16 @@
 const { Client } = require('discord.js-selfbot-v13');
-const Discord = require('discord.js-selfbot-v13');
 const express = require('express');
 const moment = require('moment');
 const readline = require('readline-sync');
+
 const num = parseFloat((Math.random() * 0.2 + 0.1 + Number.EPSILON).toFixed(1));
 const operator = Math.random() < 0.3 ? '+' : '-';
 const app = express();
 const port = 8000;
+const token = ""; 
 
 app.get('/', (req, res) => res.send('ทำงานเรียบร้อยแล้ว'));
-app.listen(port, () =>
-  console.log(`Your app is listening at http://localhost:${port}`)
-);
+app.listen(port, () => console.log(`Your app is listening at http://localhost:${port}`));
 
 const client = new Client({
   checkUpdate: false
@@ -29,18 +28,16 @@ client.on('ready', async () => {
   setInterval(() => {
     const created = moment().format('YYYY-MM-DD HH:mm:ss ');
 
-    const change = ['https://cdn.discordapp.com/attachments/1199386824582373516/1202226252967333908/feac57129dbae1df38a8e098ed88bcce.png?ex=65e85ef2&is=65d5e9f2&hm=da3b605d9d274069b28f93bab277e7057d1614a7dadf0bcbf7978ebffce2478c&'];
-    const poop = ['https://media.discordapp.net/attachments/889976848581287946/1192463032610193610/a_f3bcc76b8af98fb87ab30d8d82376ac0.gif?ex=65e9c43d&is=65d74f3d&hm=41dfdde129cfc0d8b2b2f3db3d010cebf19747865f64ebd6f936dd75dd61d1d9&=&width=350&height=350'];
-    const change2 = ['มีบอทเจ๋งๆ ', 'มีเม็ดม่วง', 'AAAA', 'Love na'];
-    const change3 = ['⏰', '⏰', '⏰', '⏰'];
-    const iooi = ['୧₊˚❤️・Itzlevy ・꒱', '〝📦〞Stream Twitch Free', '〝📦〞Free access 200 room+'];
-    const iiio = ['https://discord.gg/aqt6thEVV7'];
-    const yyyt = ['⏰₊꒷ Join discord ˳ʚ', '⏰₊꒷ Join discord ˳ʚ', '⏰₊꒷ Join discord ˳ʚ'];
-    const ddds = ['https://discord.gg/aqt6thEVV7'];
+    const change = ['https://media.discordapp.net/attachments/1137360950203273327/1271033487104806963/Youtube.png?ex=66b5ddad&is=66b48c2d&hm=f3e76176eca1e74fd20fe4bd842c03b48b7338ed5fe43ab7ce6b538c1ad6dc38&=&format=webp&quality=lossless&width=793&height=446'];
+    const poop = ['https://cdn.discordapp.com/attachments/1137360950203273327/1271060124441509888/Snapinsta.app_453987665_1544669619454767_748569339316843040_n_1080.jpg?ex=66b5f67c&is=66b4a4fc&hm=cbebc0643c287ebc3d714d2d3a8f552538d628a33a97a152a734e942178897cf&'];
+    const change2 = ['มีบอทเจ๋งๆ ', 'มีเม็ดม่วง', 'แอดมินโคตรหล่อ', 'Support เกือบ 25 ชั่วโมง'];
+    const change3 = [':alarm_clock:', ':alarm_clock:', ':alarm_clock:', ':alarm_clock:'];
+    const iooi = ['୧₊˚:ticket:・Ticket・꒱', '〝:package:〞Stream Twitch 30 B', '〝:package:〞Bot Buy Rloe 0 B'];
+    const iiio = ['https://discord.gg/PZmvmA2q6U'];
+    const yyyt = [':alarm_clock:₊꒷ Join discord ˳ʚ', ':alarm_clock:₊꒷ Join discord ˳ʚ', ':alarm_clock:₊꒷ Join discord ˳ʚ'];
+    const ddds = ['https://discord.gg/PZmvmA2q6U'];
 
-    // Randomize data
     const tyyy = yyyt[Math.floor(Math.random() * yyyt.length)];
-    const sddd = ddds[Math.floor(Math.random() * ddds.length)];
     const oooi = iiio[Math.floor(Math.random() * iiio.length)];
     const ioii = iooi[Math.floor(Math.random() * iooi.length)];
     const popp = poop[Math.floor(Math.random() * poop.length)];
@@ -48,30 +45,26 @@ client.on('ready', async () => {
     const dwada = change2[Math.floor(Math.random() * change2.length)];
     const ap = change3[Math.floor(Math.random() * change3.length)];
 
-
-    const r = new Discord.RichPresence()
-      .setApplicationId('928000104378548224')
-      .setType('LISTENING')
-      .setURL('https://youtu.be/xTZk2G9-6co?si=xpE-kzJivOITFzmQ')
-      .setState(`${dwada}`)
-      .setName(`levy`)
-      .setDetails(`${ap}${getTime()} ${moment().format('- DD/MM/YYYY')}`)
-      .setAssetsSmallImage(`${popp}`)
-      .setAssetsLargeImage(`${ssss}`)
-      .setAssetsLargeText(`🌡️ ${operator === '+' ? (global.temp + num).toFixed(1) : (global.temp - num).toFixed(1)} °C | 🍃 ${operator === '+' ? (global.wind + num).toFixed(1) : (global.wind - num).toFixed(1)} m/s`)
-      .addButton(`${ioii}`, `${oooi}`)
-      .addButton(`${tyyy}`, `${sddd}`)
-      .setAssetsSmallText(`ping : ${Math.round(client.ws.ping)}`)
-      .setStartTimestamp(Date.now())
-      .setEndTimestamp(Date.now());
-
-    client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
-    client.user.setActivity(r);
+    client.user.setPresence({
+      activities: [{
+        name: dwada,
+        type: 'STREAMING',
+        url: 'https://www.twitch.tv/4levy_z1',
+        details: `${ap}${getTime()} ${moment().format('- DD/MM/YYYY')}`,
+        state: 'AAA?',
+        assets: {
+          largeImage: ssss,
+          largeText: `🌡️ ${operator === '+' ? (global.temp + num).toFixed(1) : (global.temp - num).toFixed(1)} °C | 🍃 ${operator === '+' ? (global.wind + num).toFixed(1) : (global.wind - num).toFixed(1)} m/s`,
+          smallImage: popp,
+          smallText: `ping : ${Math.round(client.ws.ping)}`
+        }
+      }],
+      status: 'online'
+    });
   }, 2 * 1000);
 
-  console.log(`${client.user.username} Is Ready!`);
+  console.log(`${client.user.username} is ready!`);
 });
-
 
 function getDate() {
   return new Date().toLocaleString('en-US', {
@@ -98,4 +91,4 @@ function getTime() {
 }
 
 // Login
-client.login(process.env['token']);
+client.login(token);
